@@ -2,6 +2,7 @@ import fs from "fs";
 
 let input = fs.readFileSync("./input.txt", "utf-8").split("\n");
 
+// Part One:
 function calibration(input) {
   let total = 0;
 
