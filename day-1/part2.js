@@ -36,7 +36,12 @@ part2(input);
 // Answer: 54845
 
 // Another star achieved! (total: 2 stars)
+// Comments:
 // Struggled a lot with this one because i didn't know how to turn spelled out digits into numerical numbers AND count them as well.
-// Struggle: Once again i wasn't careful of the return statement and i put it in the for loop which prevented me from getting the calculations showing
+
+// Struggle:
+// Once again i wasn't careful of the return statement and i put it in the for loop which prevented me from getting the calculations showing
 // however, I also didn't remember to reassign a variable i had to call it again
-// What did I learn: Learnt how to map new items over old ones using replaceAll() and a for...loop
+
+// What did I learn:
+// Learnt how to map new items over old ones using replaceAll() and a for...loop
