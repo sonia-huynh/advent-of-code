@@ -28,7 +28,7 @@ calibration(input);
 // Attempted this by myself with no help!
 
 // Struggle:
-// I put return in myif statements within the for loop and couldn't get the total.
+// I put return in my if statements within the for loop and couldn't get the total.
 // Asked chatGPT and found out that i cannot put return statements inside a for loop or else it will terminate the loop once the condition is satisfied
 
 // What did i learn:

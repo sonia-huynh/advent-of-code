@@ -44,7 +44,7 @@ sumId(input);
 // Was unsure on how to decrease the count for the number AND the colour
 
 // Struggle:
-//
+// forgetting that arrays can't be split, only strings can, so you have to use a loop!
 
 // What did i learn:
-// How to deconstruct a split string into an array
+// How to destructure an array that has been created from a string split
