@@ -14,9 +14,15 @@ function mostCalories(input) {
     arr.push(sum);
   }
 
-  arr.sort((a, b) => b - a);
-  console.log(arr[0]);
-  return arr[0];
+  //part 2
+  const topThree = arr
+    .sort((a, b) => b - a)
+    .slice(0, 3)
+    .reduce((a, b) => a + b, 0);
+
+  console.log(topThree);
+
+  return topThree;
 }
 
 mostCalories(input);
