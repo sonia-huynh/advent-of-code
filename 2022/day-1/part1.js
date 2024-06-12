@@ -14,8 +14,21 @@ function mostCalories(input) {
     arr.push(sum);
   }
 
-  console.log(arr[0]);
-  return arr[0];
+  const top = arr.sort((a, b) => b - a)[0];
+
+  console.log(top);
+  return top;
 }
 
 mostCalories(input);
+// Answer: 74711
+
+// Comments:
+
+// Struggle:
+// Forgot that reduce method only returns back a number and not an array so i spent a while trying to figure out how to turn the answer back into an array.
+// figured i'd just push it into an empty array and that worked
+
+// What did i learn:
+// refamiliarising myself with the reduce and sort methods
+// had a bit of trouble converting the text file into something i knew how to use because the text file had double line spacing that i didn't realise
