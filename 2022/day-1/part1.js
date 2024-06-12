@@ -32,3 +32,4 @@ mostCalories(input);
 // What did i learn:
 // refamiliarising myself with the reduce and sort methods
 // had a bit of trouble converting the text file into something i knew how to use because the text file had double line spacing that i didn't realise
+// Also remembered that i saw someone else access the indexes in an array by using the square bracket notation directly after a method so tried it here and it worked.

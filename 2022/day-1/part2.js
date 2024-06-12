@@ -26,3 +26,12 @@ function mostCalories(input) {
 }
 
 mostCalories(input);
+// Answer: 209481
+
+// Comments:
+// Knew how to solve it but decided to put it all in one line so it wasn't all spaced out with multiple variables.
+
+// Struggle:
+
+// What did i learn:
+// practiced .slice()
