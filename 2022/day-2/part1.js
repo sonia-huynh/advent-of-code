@@ -59,3 +59,14 @@ function totalScore(input) {
 
 totalScore(input);
 //Answer: 13268
+
+// Comments:
+
+// Struggle:
+// Struggled a little bit with trying to figure out how to separate between the opponents turn and the player's turn so that i could map through the strat code with the player moves
+// ended up using a for loop to access each individual player so that i could split it and keep them in an array
+
+// What did i learn:
+// practiced more of the += and also remembering to keep a global variable for score outisde of the loops
+// practiced a new strategy (string replacement using mapping transformation) i learned in aoc 2023 where i map over array items and replace them with the object dictionary i created
+// practiced how to dynamically access object key value pairs using bracket notation with moves[combo[1]]
