@@ -72,3 +72,11 @@ function totalScore(input) {
 
 totalScore(input);
 // Answer: 15508
+
+// Comments:
+
+// Struggle:
+// Not particularly a struggle, but i do wonder whether my code could be more dynamic rather than manually writing out the winning and losing moves that the player has to use
+
+// What did i learn:
+// practiced nested if else statements
