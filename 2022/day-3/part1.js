@@ -1,12 +1,9 @@
 import fs from "fs";
 
-// const input = fs.readFileSync("./test.txt", "utf-8").split("\n");
-const input = fs.readFileSync("./input.txt", "utf-8").split("\n");
+const input = fs.readFileSync("./test.txt", "utf-8").split("\n");
+// const input = fs.readFileSync("./input.txt", "utf-8").split("\n");
 
-// console.log(input);
 function rucksackReorganization(input) {
-  //   const compOne = [];
-  //   const compTwo = [];
   let total = 0;
   const same = [];
 
@@ -17,24 +14,22 @@ function rucksackReorganization(input) {
     const element = input[i];
     const half = element.length / 2;
 
+    //compartment one
     const compartOne = element.slice(0, half); //string
-    const singleLettersOne = compartOne.split("");
-    // compOne.push(compartOne);
-    const uniqueSetCompOne = [...new Set(singleLettersOne)]; // spread syntax used to convert 'Set' back to array
+    const uniqueSetCompOne = new Set(compartOne);
 
+    //compartment two
     const compartTwo = element.slice(half, element.length); //string
-    // compTwo.push(compartTwo);
-    const singleLettersTwo = compartTwo.split("");
-    const uniqueSetCompTwo = [...new Set(singleLettersTwo)]; // spread syntax used to convert 'Set' back to array
+    const uniqueSetCompTwo = new Set(compartTwo);
 
-    for (let i = 0; i < uniqueSetCompOne.length; i++) {
-      const letter = uniqueSetCompOne[i];
-      const repeat = uniqueSetCompTwo.filter((single) => single === letter)[0];
-
-      if (repeat != undefined) {
-        same.push(repeat);
+    // find repeating letters
+    for (let letter of uniqueSetCompOne) {
+      if (uniqueSetCompTwo.has(letter)) {
+        same.push(letter);
       }
     }
+
+    // calculate sum of repeated letters
   }
   for (let i = 0; i < same.length; i++) {
     const item = same[i];
@@ -48,12 +43,14 @@ function rucksackReorganization(input) {
 
     for (let high of upper) {
       if (item === high) {
-        const upped = upper.indexOf(high) + 27;
+        const upped = upper.indexOf(high) + 27; //+27 because uppercase starts from 27
         total += upped;
       }
     }
   }
   console.log(total);
+  return total;
 }
 
 rucksackReorganization(input);
+// Answer: 157
